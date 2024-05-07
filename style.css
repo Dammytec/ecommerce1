@@ -1,0 +1,118 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+body{
+    background-color: rgb(184, 221, 184);
+}
+.container{
+    margin: 0 auto;
+    width: 80%;
+}
+
+/* header */
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgb(49, 204, 49);
+    width: 100%;
+}
+.cart-img img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+.cart-item{
+   display: flex;
+   gap: 20px;
+   align-items: center;
+}
+.sidebar{
+    width: 300px;
+    box-shadow: 0 0 5p 5px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background-color: rgb(8, 210, 8);
+    padding: 40px ;
+    
+}
+.hide{
+    right: -400px;
+}
+
+.title{
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+}
+.cancel{
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    cursor: pointer;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+.logo{
+    font-weight: 700;
+    font-size: 30px;
+}
+#cart-icon{
+   font-size: 30px;
+   cursor: pointer;
+}
+.shop-title{
+    margin-top: 80px;
+    text-align: center;
+}
+img{
+    height: 200px;
+    width: 260px;
+}
+#cart-bag{
+    font-size: 30px;
+    cursor: pointer;
+    background-color: rgb(29, 195, 29);
+    height: 35px;
+    width: 30px;
+    margin-left: 120px;
+    
+}
+.shop-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    margin-top: 30px;
+    gap: 30px;
+}
+.product-price{
+   margin-bottom: 30px;
+}
+.shop-content:hover{
+    padding: 10px;
+    border: 10px solid rgb(8, 215, 67);
+    transition: 0.20s;
+    height: 300px;
+    width: 300px;
+}
+.sidebar{
+    margin-top: 10px;
+}
